@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infografía de Biografía</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --card: #ffffff;
+      --text: #3a3a3a;
+      --muted: #6f6f6f;
+      --accent: #7fa3b0;
+      --accent2: #c0c8d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .infografia {
+      width: min(950px, 100%);
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 18px 35px rgba(0,0,0,.08);
+      padding: 28px;
+    }
+    h1 { margin: 0 0 16px; color: #2f4858; font-size: 2rem; }
+    .seccion {
+      margin-bottom: 20px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #f5f6f7;
+    }
+    .seccion h2 {
+      margin: 0 0 10px;
+      color: #3f5c6d;
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--accent2);
+      padding-bottom: 6px;
+    }
+    .lista {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .lista li {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+    .timeline {
+      display: grid;
+      gap: 8px;
+    }
+    .evento {
+      background: #ffffff;
+      border-left: 4px solid var(--accent);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 0.94rem;
+      color: var(--muted);
+    }
+    .evento strong { color: #3a585f; }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      background: #e8eff2;
+      color: #44606c;
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    @media (max-width: 720px) {
+      .infografia { padding: 18px; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <article class="infografia">
+    <h1>Mi Biografía</h1>
+
+    <section class="seccion">
+      <h2>Datos básicos</h2>
+      <ul class="lista">
+        <li><strong>Nombre:</strong> Cristina Ortiz</li>
+        <li><strong>Ciudad:</strong> Loja</li>
+        <li><strong>Profesión/Estudio:</strong> Estudiante del Colegio Beatriz Cueva de Ayora</li>
+        <li><strong>Lema:</strong> “Aprendo y me expreso a través de la danza, creciendo cada día con pasión y disciplina.”</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Línea del tiempo</h2>
+      <div class="timeline">
+        <div class="evento"><strong>2010:</strong> Inicié creando videos en la plataforma Facebook, desarrollando mi creatividad y confianza.</div>
+        <div class="evento"><strong>2015:</strong> Continué realizando videos y descubrí nuevos intereses, como las motos y la edición de contenido.</div>
+        <div class="evento"><strong>2020:</strong> Con el inicio de la pandemia, me costó adaptarme a lo virtual, pero encontré en la danza una motivación importante. Desde ese momento, comencé a practicarla con más dedicación.</div>
+        <div class="evento"><strong>2025:</strong> Tuve presentaciones con mi grupo de danza, conocí nuevos lugares y personas que me motivaron aún más a seguir bailando.</div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2>Habilidades y valores</h2>
+      <div class="chips">
+        <span class="chip">Creatividad</span>
+        <span class="chip">Responsabilidad</span>
+        <span class="chip">Comunicación</span>
+        <span class="chip">Trabajo en equipo</span>
+        <span class="chip">Resolución de problemas</span>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h2>Proyectos / logros</h2>
+      <ul class="lista">
+        <li><strong>Proyecto A:</strong> Participación en presentaciones de danza. Resultado: fortalecí mi confianza escénica. Aprendizaje: la disciplina y el trabajo en equipo son clave.</li>
+        <li><strong>Proyecto B:</strong> Creación de coreografías grupales. Resultado: mejor coordinación y expresión artística. Aprendizaje: la creatividad es fundamental en la danza.</li>
+        <li><strong>Voluntariado:</strong> Participación en actividades culturales de danza. Impacto: motivar a otras personas a expresarse a través del baile. Rol: bailarina y colaboradora en eventos.</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Contacto</h2>
+      <ul class="lista">
+        <li><strong>Correo:</strong> cristin2006.18@gmail.com</li>
+      </ul>
+    </section>
+
+    <div class="footer">Diseño con paleta suave para lectura clara sin colores intensos.</div>
+  </article>
+</body>
+</html>
